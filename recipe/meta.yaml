@@ -10,7 +10,6 @@ source:
   sha256: 09197b364a665ca043cd9552fafa0d78c3c6153248ce5c6fd74e60cae4636d11
 
 build:
-  noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -22,6 +21,7 @@ requirements:
     - python
     - msal >=0.4.1,<2.0
     - portalocker
+    - pathlib2  # [py2k]
 
 test:
   imports:
