@@ -5,7 +5,7 @@ Home: https://github.com/AzureAD/microsoft-authentication-extensions-for-python
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Microsoft Authentication extensions for MSAL.Python 
 
