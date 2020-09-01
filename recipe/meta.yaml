@@ -1,5 +1,5 @@
 {% set name = "msal_extensions" %}
-{% set version = "0.2.2" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/AzureAD/microsoft-authentication-extensions-for-python/archive/{{ version }}.tar.gz
-  sha256: 09197b364a665ca043cd9552fafa0d78c3c6153248ce5c6fd74e60cae4636d11
+  sha256: 88d53bb2eb3ef1d4aae10ee318ddc1e6d9661f5fc80e1c59c6520524c79a16df
 
 build:
   noarch: python
