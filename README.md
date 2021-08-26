@@ -122,5 +122,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@roederja](https://github.com/roederja/)
 * [@roederja2](https://github.com/roederja2/)
 
