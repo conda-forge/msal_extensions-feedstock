@@ -10,15 +10,16 @@ source:
   sha256: e49fcc7f16228f9645aab2b1033479b6ee8b93655c70326392d19c4affb99a7b
 
 build:
+  skip: True  # [py<37]
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.7
+    - python
     - pip
   run:
-    - python >=3.7
+    - python
     - libsecret  # [not win]
     - msal >=0.4.1,<2.0
     - packaging
