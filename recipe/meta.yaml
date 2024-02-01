@@ -10,18 +10,20 @@ source:
   sha256: e49fcc7f16228f9645aab2b1033479b6ee8b93655c70326392d19c4affb99a7b
 
 build:
-  noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
+    - python >=3.7
+    - libsecret  # [not win]
     - msal >=0.4.1,<2.0
+    - packaging
     - portalocker >=1.6,<3.0
+    - pygobject >=3,<4  # [not win]
 
 test:
   imports:
