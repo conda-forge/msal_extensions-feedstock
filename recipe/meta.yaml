@@ -32,6 +32,10 @@ requirements:
 test:
   imports:
     - msal_extensions
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://github.com/AzureAD/microsoft-authentication-extensions-for-python
