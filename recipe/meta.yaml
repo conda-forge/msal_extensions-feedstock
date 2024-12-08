@@ -1,5 +1,5 @@
 {% set name = "msal_extensions" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/AzureAD/microsoft-authentication-extensions-for-python/archive/{{ version }}.tar.gz
-  sha256: e49fcc7f16228f9645aab2b1033479b6ee8b93655c70326392d19c4affb99a7b
+  sha256: c8032459d8396a8d8992a0625a35b4ef44c2d784b2efddabb042f3e6cafb2dc4
 
 build:
-  skip: True  # [py<37]
-  number: 1
+  skip: true  # [py<37]
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -24,14 +24,17 @@ requirements:
   run:
     - python
     - libsecret  # [not win]
-    - msal >=0.4.1,<2.0
-    - packaging
+    - msal >=1.2.9,<2.0
     - portalocker >=1.6,<3.0
     - pygobject >=3,<4  # [not win]
 
 test:
   imports:
     - msal_extensions
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://github.com/AzureAD/microsoft-authentication-extensions-for-python
