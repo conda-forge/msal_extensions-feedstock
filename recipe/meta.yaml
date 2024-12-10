@@ -11,7 +11,7 @@ source:
 
 build:
   skip: true  # [py<37]
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -25,7 +25,7 @@ requirements:
   run:
     - python
     - libsecret  # [not win]
-    - msal >=1.2.9,<2.0
+    - msal >=1.29,<2.0
     - portalocker >=1.6,<3.0
     - pygobject >=3,<4  # [not win]
 
