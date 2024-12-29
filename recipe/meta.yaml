@@ -10,30 +10,28 @@ source:
   sha256: c8032459d8396a8d8992a0625a35b4ef44c2d784b2efddabb042f3e6cafb2dc4
 
 build:
-  skip: true  # [py<37]
-  number: 2
+  noarch: python
+  number: 3
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
-    - python                                 # [build_platform != target_platform]
-    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
-    - python
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python
+    - python >={{ python_min }}
     - libsecret  # [not win]
     - msal >=1.29,<2.0
     - portalocker >=1.6,<3.0
     - pygobject >=3,<4  # [not win]
 
 test:
+  requires:
+    - python {{ python_min }}
+    - pip
   imports:
     - msal_extensions
-  requires:
-    - pip
   commands:
     - pip check
 
