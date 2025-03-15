@@ -10,7 +10,7 @@ source:
   sha256: 4fd784f391e19a56d1f86c2288f878fb00b2f9e8658b6396dea5eea6baace58b
 
 build:
-  skip: true  # [py<37]
+  skip: true  # [py<39]
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -26,7 +26,7 @@ requirements:
     - python
     - libsecret  # [not win]
     - msal >=1.29,<2
-    - portalocker >=1.6,<3.0
+    - portalocker >=1.6,<4
     - pygobject >=3,<4  # [not win]
 
 test:
