@@ -20,14 +20,7 @@ Current build status
 ====================
 
 
-<table><tr>
-    <td>Travis</td>
-    <td>
-      <a href="https://app.travis-ci.com/conda-forge/msal_extensions-feedstock">
-        <img alt="linux" src="https://img.shields.io/travis/com/conda-forge/msal_extensions-feedstock/main.svg?label=Linux">
-      </a>
-    </td>
-  </tr>
+<table>
     
   <tr>
     <td>Azure</td>
@@ -221,7 +214,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-msal_extensions-green.svg)](https://anaconda.org/conda-forge/msal_extensions) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/msal_extensions.svg)](https://anaconda.org/conda-forge/msal_extensions) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/msal_extensions.svg)](https://anaconda.org/conda-forge/msal_extensions) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/msal_extensions.svg)](https://anaconda.org/conda-forge/msal_extensions) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-msal__extensions-green.svg)](https://anaconda.org/conda-forge/msal_extensions) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/msal_extensions.svg)](https://anaconda.org/conda-forge/msal_extensions) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/msal_extensions.svg)](https://anaconda.org/conda-forge/msal_extensions) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/msal_extensions.svg)](https://anaconda.org/conda-forge/msal_extensions) |
 
 Installing msal_extensions
 ==========================
